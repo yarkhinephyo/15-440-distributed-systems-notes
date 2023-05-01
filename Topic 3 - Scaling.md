@@ -3,7 +3,7 @@
 1. Scale up - Add more resources to each individual node.
 2. Scale out - Add more nodes and spread load across them.
 
-<u>Types of scaling out</u>
+<ins>Types of scaling out</ins>
 
 1. Scale horizontally - Add more nodes that share the same function.
 2. Scale vertically - Split a task of a single node into subtasks assigned to different nodes.
@@ -39,14 +39,14 @@ Theoretical speed up is limited by the part of the task that cannot be paralleli
 
 **Scaling a Website**
 
-<u>1-tier Website</u>
+<ins>1-tier Website</ins>
 
 ![](images/Pasted%20image%2020230429133130.png)
 
 - Easy to add content but limited storage.
 - Painful to maintain user accounts in the local disk.
 
-<u>2-tier website</u>
+<ins>2-tier website</ins>
 
 ![](images/Pasted%20image%2020230429133345.png)
 
@@ -54,7 +54,7 @@ Theoretical speed up is limited by the part of the task that cannot be paralleli
 - More storage for content scalability.
 - Web server likely to be the bottleneck as generating dynamic content consumers CPU cycles.
 
-<u>3-tier Website</u>
+<ins>3-tier Website</ins>
 
 ![](images/Pasted%20image%2020230429133741.png)
 

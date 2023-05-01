@@ -42,20 +42,20 @@ Every transaction has a commit point. Before the commit point, undo should be po
 
 **ACID Property of Transactions**
 
-- <u>Atomicity</u>: All or nothing.
-- <u>Consistency</u>: Execution of a consistent state leaves data consistent.
-- <u>Isolation</u>: As if only one transaction is running.
-- <u>Durability</u>: Effects of a committed transaction are preserved forever.
+- <ins>Atomicity</ins>: All or nothing.
+- <ins>Consistency</ins>: Execution of a consistent state leaves data consistent.
+- <ins>Isolation</ins>: As if only one transaction is running.
+- <ins>Durability</ins>: Effects of a committed transaction are preserved forever.
 
 **Shadowing**
 
-Carefully construct a shadow copy that contains all modification and use <u>an atomic pointer</u> swing that atomically commits a transaction.
+Carefully construct a shadow copy that contains all modification and use <ins>an atomic pointer</ins> swing that atomically commits a transaction.
 
 Crash recovery is only garbage collection of unreachable pages. Slow forward processing during transaction but fast recovery.
 
 **Intention List**
 
-Keep a list of proposed changes in the stable storage. On commit, write <u>a completion record</u> to the list and gradually apply changes to the stable storage. On abort, delete the intention list instead.
+Keep a list of proposed changes in the stable storage. On commit, write <ins>a completion record</ins> to the list and gradually apply changes to the stable storage. On abort, delete the intention list instead.
 
 On crash recovery, discard incomplete intention lists and reapply complete intention lists. There is no undo-ing. The intention lists must be idempotent.
 
@@ -65,10 +65,10 @@ Optimized version of intention list. Append-only log that is preserved until log
 
 During crash recovery, log entries may be ignored/ redone/ undone.
 
-<u>Logical Logging</u>: More compact but requires application support.
+<ins>Logical Logging</ins>: More compact but requires application support.
 
-<u>Physical Logging</u>: Less compact but more general.
+<ins>Physical Logging</ins>: Less compact but more general.
 
-<u>Undo Rule</u>: If and only if uncommitted transactions can modify committed state.
+<ins>Undo Rule</ins>: If and only if uncommitted transactions can modify committed state.
 
-<u>Redo rule</u>: If and only if committed transactions have outstanding modifications to committed state.
+<ins>Redo rule</ins>: If and only if committed transactions have outstanding modifications to committed state.

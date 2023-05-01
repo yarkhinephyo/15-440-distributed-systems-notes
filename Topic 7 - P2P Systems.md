@@ -6,7 +6,7 @@ There are clients and servers. Allows delegation of authority across organizatio
 
 Every node is equal. For example, Exterior Gateway Protocol is a mechanism for combining computer networks with each being run by a different organization.
 
-<u>EGP</u>
+<ins>EGP</ins>
 
 Each autonomous system has one or more gateways. Each gateway is configured with a set of neighbors.
 
@@ -32,13 +32,13 @@ Identifies files by the cryptographic hash of the contents. Automatically assign
 
 **BitTorrent**
 
-<u>With Tracker</u>
+<ins>With Tracker</ins>
 
 1. Node contacts tracker to get the list of peers.
 2. Node contacts peers and requests chunks in parallel.
 3. Node will serve other peers at the same time.
 
-<u>Without Tracker</u>
+<ins>Without Tracker</ins>
 
 Without tracker, a directory is needed to figure out what files map to what peers.
 
@@ -78,7 +78,7 @@ The lookup process is as follows:
 
 Each record is digitally signed and includes cryptographic hash of a previous record. Once a record is public, it is not possible to forge the previous records.
 
-<u>Nakamoto Consensus</u>
+<ins>Nakamoto Consensus</ins>
 
 - Solves who gets to write the next record for a distributed ledger.
 - Makes all nodes solve a difficult computational problem. 

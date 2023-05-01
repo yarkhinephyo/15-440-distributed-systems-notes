@@ -26,7 +26,7 @@
 
 Alice sends (g<sup>a</sup> mod p) to Bob. Bob sends (g<sup>b</sup> mod p) to Alice. They can calculate the common secret. Note that "g" and "p" are agreed first.
 
-<u>Common secret</u> = (g<sup>a</sup> mod p)<sup>b</sup> mod p = (g<sup>b</sup> mod p)<sup>a</sup> mod p
+<ins>Common secret</ins> = (g<sup>a</sup> mod p)<sup>b</sup> mod p = (g<sup>b</sup> mod p)<sup>a</sup> mod p
 
 **Message Authentication Code (MAC)**
 
@@ -38,7 +38,7 @@ HMAC algorithm is used to produce MAC. HMAC is a symmetric algorithm so a common
 
 Encrypt a message with public key and decrypt it with the private key.
 
-<u>Digital Signature</u>: Encrypt a hashed message with the private key. The public key can be used to decrypt and verify the hash.
+<ins>Digital Signature</ins>: Encrypt a hashed message with the private key. The public key can be used to decrypt and verify the hash.
 
 **Diffie-Hellman with RSA**
 
@@ -52,7 +52,7 @@ A global naming system can have no more than two of the properties below.
 2. Decentralized.
 3. Collision Free.
 
-<u>Example</u>
+<ins>Example</ins>
 
 - DNS is collision free and human meaningful.
 - Bitcoin is collision free and decentralized.
@@ -63,9 +63,9 @@ Authentication for a single organization with many computers. Consist of authent
 
 1. Client sends user ID to authentication server.
 2. Authentication server sends encrypted message.
-3. Client decrypts it with password to get <u>ticket-granting ticket</u>.
+3. Client decrypts it with password to get <ins>ticket-granting ticket</ins>.
 4. Client sends TGT to ticket-granting server.
-5. Ticket granting server sends back <u>service tickets</u>.
+5. Ticket granting server sends back <ins>service tickets</ins>.
 6. User requests for services with the service tickets.
 
 **Shiboboleth**
@@ -78,9 +78,9 @@ Allows user to access many resources with one identity. Unlike Kerberos which is
 
 **Access Control List vs Object Capabilities**
 
-<u>ACL</u>: For each resource, a list of users are entitled to use it. More common than capabilities.
+<ins>ACL</ins>: For each resource, a list of users are entitled to use it. More common than capabilities.
 
-<u>Capabilities</u>: For each user, there is a list of rights for every object.
+<ins>Capabilities</ins>: For each user, there is a list of rights for every object.
 
 |               | ACL System | Capability System |
 | ------------- | ---------- | ----------------- |

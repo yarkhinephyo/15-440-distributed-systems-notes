@@ -1,6 +1,6 @@
 **Append-Only DAG**
 
-Similar to Append-Only Ledger but a record can have more than one parent. In Git, Append-Only DAG is the implementation of the <u>commit history</u>. If a commit has two parents, it means that two branches joined together.
+Similar to Append-Only Ledger but a record can have more than one parent. In Git, Append-Only DAG is the implementation of the <ins>commit history</ins>. If a commit has two parents, it means that two branches joined together.
 
 **Merkle Tree**
 
@@ -19,17 +19,17 @@ Hashes point towards leaves instead of parents. Represents a file tree in distri
 
 Protocol behind the decentralized social network.
 
-<u>Follow Request</u>
+<ins>Follow Request</ins>
 
 Following actor and followed actor on different servers.
 
 ![](images/Pasted%20image%2020230430211354.png)
 
-<u>Post Distribution</u>
+<ins>Post Distribution</ins>
 
 Home instance for the user tracks all his followers. For each remote server with followers, retrieve the user details and post to their inboxes.
 
-<u>Post Boosting</u>
+<ins>Post Boosting</ins>
 
 Announcing instance tells the followers from remote instances to fetch the data from the owner instance.
 

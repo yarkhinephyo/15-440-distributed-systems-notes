@@ -24,7 +24,7 @@
 
 A caching system has one-copy semantics if are no externally observable functional differences relative to the same system without caching.
 
-<u>Difficult in practice</u>
+<ins>Difficult in practice</ins>
 
 - Physical master copy may not exist.
 - Network may break between some users and master copy.
@@ -80,7 +80,7 @@ Initiates fetch of data in advance of need. If completion of fetch occurs before
 
 However, erroneous commitment will increase latency instead. For example, by delaying demand requests behind prefetching traffic. To solve this, the server can maintain separate queues. However, packets in the network will still cause the same problem in routers.
 
-<u>When to use prefetching</u>
+<ins>When to use prefetching</ins>
 
 ![](images/Pasted%20image%2020230429122250.png)
 
